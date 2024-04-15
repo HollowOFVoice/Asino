@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="600.0" styleClass="anchorAfanaci" stylesheets="@collor.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.asino.HelloController">
+   <children>
+      <Button fx:id="spin" layoutX="62.0" layoutY="30.0" mnemonicParsing="false" onAction="#ButtonSpin" prefHeight="25.0" prefWidth="98.0" styleClass="buttons" stylesheets="@collor.css" text="Крутить" textFill="WHITE" />
+      <Button fx:id="exit" layoutX="62.0" layoutY="79.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" styleClass="buttons" stylesheets="@collor.css" text="Выход" textFill="WHITE" />
+      <Circle layoutX="254.0" layoutY="67.0" radius="46.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="367.0" layoutY="67.0" radius="46.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="488.0" layoutY="67.0" radius="46.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Text id="oneN" fx:id="oneN" fill="WHITE" layoutX="239.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="51.0">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Text>
+      <Text id="twoN" fx:id="twoN" fill="WHITE" layoutX="356.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="51.0">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Text>
+      <Text id="threeN" fx:id="threeN" fill="WHITE" layoutX="476.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="51.0">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="138.0" fitWidth="281.0" layoutX="150.0" layoutY="149.0">
+         <image>
+            <Image url="@pobeda.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
