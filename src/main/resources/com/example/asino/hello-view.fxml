@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -14,7 +15,19 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="600.0" styleClass="anchorAfanaci" stylesheets="@collor.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.asino.HelloController">
    <children>
       <Button fx:id="spin" layoutX="62.0" layoutY="30.0" mnemonicParsing="false" onAction="#ButtonSpin" prefHeight="25.0" prefWidth="98.0" styleClass="buttons" stylesheets="@collor.css" text="Крутить" textFill="WHITE" />
-      <Button fx:id="exit" layoutX="62.0" layoutY="79.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" styleClass="buttons" stylesheets="@collor.css" text="Выход" textFill="WHITE" />
+      <Button fx:id="exit" layoutX="62.0" layoutY="79.0" mnemonicParsing="false" onAction="#ex" prefHeight="25.0" prefWidth="98.0" styleClass="buttons" stylesheets="@collor.css" text="Выход" textFill="WHITE" />
+      <Text id="oneN" fx:id="textSpining" fill="WHITE" layoutX="14.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество вращений: " wrappingWidth="131.0" />
+      <Text id="oneN" fx:id="allSpin" fill="WHITE" layoutX="150.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="131.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text id="oneN" fx:id="textWin" fill="WHITE" layoutX="14.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество побед:" wrappingWidth="131.0" />
+      <Text id="oneN" fx:id="win" fill="WHITE" layoutX="130.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="31.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
       <Circle layoutX="254.0" layoutY="67.0" radius="46.0" stroke="BLACK" strokeType="INSIDE">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
@@ -84,10 +97,19 @@
             <Font size="38.0" />
          </font>
       </Text>
-      <ImageView fitHeight="138.0" fitWidth="281.0" layoutX="150.0" layoutY="149.0">
+      <ImageView id="img" fx:id="image" fitHeight="138.0" fitWidth="281.0" layoutX="150.0" layoutY="156.0" opacity="0.0" smooth="false">
          <image>
             <Image url="@pobeda.jpg" />
          </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
       </ImageView>
+      <Text id="oneN" fx:id="textWin1" fill="WHITE" layoutX="453.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шанс выигрыша:" wrappingWidth="98.0" />
+      <Text id="oneN" fx:id="luck" fill="WHITE" layoutX="563.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="31.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
