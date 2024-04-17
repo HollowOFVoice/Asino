@@ -23,7 +23,7 @@
          </font>
       </Text>
       <Text id="oneN" fx:id="textWin" fill="WHITE" layoutX="14.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество побед:" wrappingWidth="131.0" />
-      <Text id="oneN" fx:id="win" fill="WHITE" layoutX="130.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="31.0">
+      <Text id="oneN" fx:id="win" fill="WHITE" layoutX="126.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="139.0">
          <font>
             <Font size="18.0" />
          </font>
@@ -97,7 +97,7 @@
             <Font size="38.0" />
          </font>
       </Text>
-      <ImageView id="img" fx:id="image" fitHeight="138.0" fitWidth="281.0" layoutX="150.0" layoutY="156.0" opacity="0.0" smooth="false">
+      <ImageView id="img" fx:id="image" fitHeight="121.0" fitWidth="425.0" layoutX="99.0" layoutY="128.0" opacity="0.0" smooth="false">
          <image>
             <Image url="@pobeda.jpg" />
          </image>
@@ -105,8 +105,13 @@
             <Cursor fx:constant="DEFAULT" />
          </cursor>
       </ImageView>
-      <Text id="oneN" fx:id="textWin1" fill="WHITE" layoutX="453.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шанс выигрыша:" wrappingWidth="98.0" />
-      <Text id="oneN" fx:id="luck" fill="WHITE" layoutX="563.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="31.0">
+      <Text id="oneN" fx:id="textWin1" fill="WHITE" layoutX="433.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шанс выигрыша:" wrappingWidth="98.0" />
+      <Text id="oneN" fx:id="luck" fill="WHITE" layoutX="535.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="86.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text id="oneN" fx:id="luck1" fill="WHITE" layoutX="560.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%" wrappingWidth="23.0">
          <font>
             <Font size="18.0" />
          </font>
