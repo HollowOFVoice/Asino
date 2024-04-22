@@ -75,7 +75,7 @@ double winN =0;
         Random rand = new Random();
 
         taps++;
-
+//
 
         int max = 9, min = 0;
         oneN.setText(String.valueOf(rand.nextInt(max - min + 1) - min));
